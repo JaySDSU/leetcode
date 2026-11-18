@@ -9,6 +9,7 @@
 # Example 2:
 # Input: strs = ["x"]
 # Output: [["x"]]
+from typing import List
 
 class Solution:
     def groupAnagrams(self, words: List[str]) -> List[List[str]]:

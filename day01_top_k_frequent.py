@@ -12,6 +12,9 @@
 # Input: nums = [7,7], k = 1
 # Output: [7]
 
+from typing import List
+from collections import Counter
+
 class Solution:
     def topKfrequent(self, nums: List[int], k: int) -> List[int]:
         counter = Counter(nums)
