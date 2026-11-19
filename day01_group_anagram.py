@@ -23,7 +23,7 @@ class Solution:
             if key not in anagram_groups:
                 anagram_groups[key] = [word]
             else:
-                anagram_groups[key].append([word])
+                anagram_groups[key].append(word)
         
         return list(anagram_groups.values())
 
