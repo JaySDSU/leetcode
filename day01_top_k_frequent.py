@@ -18,7 +18,7 @@ from collections import Counter
 class Solution:
     def topKfrequent(self, nums: List[int], k: int) -> List[int]:
         counter = Counter(nums)
-        freq_counter = []
+        freq_counter = [[] for _ in range(len(nums) + 1)]
 
         for num, freq in counter.items():
             freq_counter[freq].append(num)
