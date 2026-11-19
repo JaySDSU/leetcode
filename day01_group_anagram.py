@@ -21,7 +21,7 @@ class Solution:
                 freq_counter[ord(char) - ord('a')] += 1
             key = tuple(freq_counter)
             if key not in anagram_groups:
-                anagram_groups[key] = word
+                anagram_groups[key] = [word]
             else:
                 anagram_groups[key].append([word])
         
